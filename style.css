@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f7fbff;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap:100px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 90px;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  color: #0d6efd;
+}
+
+.hero-text h3 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 12px 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.hero-img{
+   flex:1;
+   display: flex;
+   justify-content: flex-end;
+
+}
+.hero-img img{
+    width:820px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.primary {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.secondary {
+  background: #e3f0ff;
+  color: #0d6efd;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 20px;
+}
+
+/* Sections */
+section {
+  padding: 60px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0d6efd;
+}
+
+/* Cases */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.case-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.tag {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 12px;
+  background: #e3f0ff;
+  color: #0d6efd;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skills-card {
+  background: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Contact */
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
